@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--设置textview背景色为黑色-->
+    <solid android:color = "#FF000000"/>
+    <!--设置灰色边框-->
+    <stroke android:width = "3px" android:color = "#bbbbbb"></stroke>
+    <!-- 文字四周留出来的空白 -->
+    <padding android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp" />
+
+
+</shape>

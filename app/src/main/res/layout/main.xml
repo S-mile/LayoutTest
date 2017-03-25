@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- 定义该组件位于父容器中间-->
+    <TextView
+        android:id="@+id/view01"
+        android:layout_width="90dp"
+        android:layout_height="75dp"
+        android:text="BlUE"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"/>
+    <!-- 定义该组件位于view01上方-->
+    <TextView
+        android:id="@+id/view02"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text ="ORANGE"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <!-- 定义该组件位于view01下方-->
+    <TextView
+        android:id="@+id/view03"
+        android:layout_width="700dp"
+        android:layout_height="75dp"
+        android:background="#ff4081"
+        android:text="PINK"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_alignParentBottom="true" />
+    <!-- 定义该组件位于view01左方-->
+    <TextView
+        android:id="@+id/view04"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="GREEN"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:layout_toLeftOf="@id/view01"
+        android:gravity="center"
+        android:layout_marginRight="13dp"
+        android:layout_alignTop="@id/view01"/>
+    <!-- 定义该组件位于view01右方-->
+    <TextView
+        android:id="@+id/view05"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:background="@android:color/holo_purple"
+        android:text="PURPLE"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@id/view01"
+        android:gravity="center"
+        android:layout_marginLeft="13dp"
+        android:layout_alignTop="@id/view01"/>
+    <TextView
+        android:id="@+id/view06"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="RED"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentLeft="true"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/view07"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="YELLOW"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:gravity="center"/>
+
+    <Button
+        android:text="上一页"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pre"
+        android:layout_above="@+id/view03"
+        android:layout_toLeftOf="@+id/view01"
+        android:layout_toStartOf="@+id/view01"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:text="下一页"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pre"
+        android:layout_alignLeft="@+id/view07"
+        android:layout_alignStart="@+id/view07"
+        android:id="@+id/nextnext" />
+</RelativeLayout>
